@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mancuso Travel</title>
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+   <style>
+   nav ul li a {
+   	text-align: center;
+   }
+   </style>
+</head>
+
+<body>
+
+    <div class="animation-wrapper">
+        <div class="banner">
+            <span>M</span><span>A</span><span>N</span><span>C</span><span>U</span><span>S</span><span>O</span>
+            <span><i class="bi bi-suitcase-fill"></i></span>
+            <span>T</span><span>R</span><span>A</span><span>V</span><span>E</span><span>L</span>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #023047;">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/destinazioni.html"><i class="bi bi-airplane-fill"></i>
+                            DESTINAZIONI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/prenotazioni.html"><i class="bi bi-calendar-check-fill"></i> PRENOTAZIONI</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/chisiamo.html"><i class="bi bi-telephone-inbound-fill"></i> CHI
+                            SIAMO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <ul class="dropdown-menu bg-warning dropdown-menu-end custom-bg"
+                            aria-labelledby="navbarDropdown">
+                            <li><a id="userLogUsername" class="dropdown-item text-white" href="#"></a></li>
+                            <li><a id="userLogRole" class="dropdown-item text-white" href="#"></a></li>
+                            <div id="areaRiservata"></div>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-white" href="#" onclick="logout()">Esci</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="welcome-section">
+        <h1 class ="shadow-text">Benvenuto su Mancuso Travel!</h1>
+        <p class="shadow-text fs-3">Scopri il mondo con noi. Offriamo viaggi personalizzati per ogni tua esigenza.</p>
+    </div>
+
+    <div class="destinations">
+        <div class="destination-card" id="roma">
+            <h3>Roma</h3>
+            <p>Scopri la città eterna con i nostri pacchetti turistici.</p>
+        </div>
+        <div class="destination-card" id="Parigi">
+            <h3>Sydney</h3>
+            <p>Sydney è la città più grande della terra dei canguri
+            </p>
+        </div>
+        <div class="destination-card" id="new">
+            <h3>New York</h3>
+            <p>Vivi il sogno americano con un tour completo della città.</p>
+        </div>
+        <div class="destination-card" id="tokyo">
+                    <h3>Tokyo</h3>
+            <p>Vivi i colori e le persone di questo magnifico luogo.</p>
+        </div>
+
+    </div>
+    <div class="hero">
+        <h1 class="h1 text-white font-family">Esplora il mondo con noi</h1>
+
+
+
+
+    </div>
+    <section class="container my-5">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Ti piace viaggiare? Sei nel posto giusto.</h2>
+            <p class="lead">Anche a noi di Mancuso Travel piace, e pure parecchio. Così tanto che partiamo tutto l’anno
+                in
+                piccoli
+                gruppi di massimo 15 persone, che hanno più o meno la stessa età e che condividono lo stesso mood di
+                viaggio. Con il gruppo c’è sempre un Coordinatore, che se proprio dobbiamo trovargli una descrizione è
+                “il
+                miglior compagno di viaggio che si possa desiderare”.</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-globe-europe-africa fs-1 text-warning"></i>
+                <h5>Scegli tra oltre 1000 itinerari</h5>
+                <h5>In tutto il mondo.</h5>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-people-fill fs-1 text-warning"></i>
+
+                <h5>Viaggia in un gruppo omogeneo per età e mood.</h5>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-arrow-through-heart-fill fs-1 text-warning"></i>
+                <h5>Composizione gruppi</h5>
+                <p>100% single, 80% donne.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <i class="bi bi-flag-fill fs-1 text-warning"></i>
+                <h5>Coordinatore esperto</h5>
+                <p>Il tuo punto di riferimento per tutto il viaggio (Marco il proprietario).</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <h1> <strong>Le destinazioni più scelte del momento</strong></h1>
+            <h3>Scopri gli itinerari più prenotati</h3>
+            <i class="bi bi-arrow-down-circle-fill fs-1 text-warning"></i>
+        </div>
+
+    </section>
+
+    <div class="section">
+
+        <img src="../img/1722924477-castellamare-di-stabia.png" alt="Stabia">
+
+
+        <div class="text-content">
+            <h2> <span class="text-success ms-3">Castellammare di Stabia</span><span class="text-danger">,
+                    Ita</span><span class="text-danger">lia</span>
+            </h2>
+            <p class="ms-3">Scopri la città del nostro Fondatore,le sue usanze, le pistole fontane barocche e una cucina
+                che
+                conquista il cuore. Castellammare di Stabia è
+                un'esperienza indimenticabile.</p>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <img src="../img/R.jpg" alt="Roma">
+        <div class="text-content">
+            <h2> <span class="text-success">Roma</span><span class="text-danger">, Ita</span><span
+                    class="text-danger">lia</span>
+            </h2>
+            <p>Scopri la città eterna tra antiche rovine, fontane barocche e una cucina che conquista il cuore. Roma è
+                un'esperienza indimenticabile.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="../img/OIP.jpg" alt="New York">
+        <div class="text-content">
+            <h2><span class="text-primary ms-3">New Yor</span><span class="text-danger">k, USA</span></h2>
+            <p class="ms-3">Vivi la metropoli che non dorme mai: grattacieli, Central Park, Times Square e infinite
+                opportunità per
+                sognare in grande.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="../img/tokyo1.jpg" alt="Tokyo">
+        <div class="text-content">
+            <h2><span class="text-secondary">Tokyo,</span><span class="text-danger">Giappone</span> </h2>
+            <p>Un mix affascinante tra tradizione e futuro. Templi antichi, tecnologia all'avanguardia e una cultura
+                unica
+                ti aspettano a Tokyo.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="../img/sidjpg.jpg" alt="Sydney">
+        <div class="text-content">
+            <h2><span class="text-warning ms-3">Sydney,</span><span class="text-success">Australia</span> </h2>
+            <p class="ms-3">Dalle iconiche vele dell'Opera House alle spiagge dorate di Bondi. Sydney è la perfetta
+                combinazione tra
+                natura e città.</p>
+        </div>
+    </div>
+
+    <!--  Foooter -->
+    <footer class="bg-dark text-white py-4 ">
+        <div class="container text-center">
+            <p>&copy; 2025 Mancuso Travel. Tutti i diritti riservati.</p>
+            <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Termini di
+                    servizio</a>
+            </p>
+            <p>Contatti :
+            <ul class="list-unstyled">
+                <li>MARCO: 340949439</li>
+                <li>SARA: 4994949449</li>
+                <li>LUIGI: 384833838</li>
+            </ul>
+            </p>
+    
+            <p>Seguici su:
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+    
+            </p>
+            <img data-testid="Image" width="95" height="32" alt="Visa" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/visa_neg.svg?jpegQuality=85" class="lazy-loaded">
+            <img data-testid="Image" width="95" height="32" alt="carta Posta" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/postepay_neg.svg?jpegQuality=85" class="lazy-loaded">
+            <img data-testid="Image" width="95" height="32" alt="Mastercard" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/mastercard_neg.svg?jpegQuality=85"
+                class="lazy-loaded">
+            <img data-testid="Image" width="95" height="32" alt="Klarna" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/klarna_neg.svg?jpegQuality=85" class="lazy-loaded">
+            <img data-testid="Image" width="95" height="32" alt="American Express" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/amex_neg.svg?jpegQuality=85" class="lazy-loaded">
+            <img data-testid="Image" width="95" height="32" alt="PayPal" loading="lazy"
+                src="https://cdn.logitravel.it/comun/images/logos/svg/paypal_neg.svg?jpegQuality=85" class="lazy-loaded">
+    
+    
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>

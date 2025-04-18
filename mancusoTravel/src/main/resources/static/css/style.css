@@ -1,0 +1,357 @@
+.animation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background: linear-gradient(to top, #87ceeb, #ffffff);
+}
+
+.banner {
+    position: absolute;
+    top: 45%;
+    left: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    animation: moveBanner 10s linear infinite;
+}
+
+.banner span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #023047;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+@keyframes flyAcross {
+    0% {
+        left: -150px;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes moveBanner {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+.navbar {
+    background-color: #023047;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffb703;
+}
+
+.navbar a:hover {
+    color: #ffb703;
+    transform: scale(1.2);
+
+}
+
+
+.welcome-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffb703;
+    color: white;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+}
+
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: #e3f2fd;
+}
+
+.destination-card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+#roma {
+    background-image: url(../img/R.jpg);
+}
+
+#Parigi {
+    background-image: url(../img/sidjpg.jpg);
+}
+
+#new {
+    background-image: url(../img/OIP.jpg);
+}
+
+#tokyo {
+    background-image: url(../img/iStock-1283529752.jpg);
+
+}
+
+
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #e0e2e3;
+}
+
+.destination-card p {
+    color: #e0e2e3;
+}
+
+.storia-verticale {
+    max-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #fffaf0, #f1e8dc);
+    padding: 40px 30px;
+    border-left: 6px solid #f77f00;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.storia-titolo h2 {
+    font-size: 2rem;
+    color: #023047;
+    font-weight: bold;
+    border-bottom: 2px solid #f77f00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.storia-contenuto p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.storia-contenuto p strong {
+    color: #f77f00;
+}
+
+#img {
+    border-radius: 30px;
+    margin-left: 20px;
+
+}
+
+.dropdown-menu.custom-bg {
+    background-color: #023047;
+}
+
+.dropdown-menu.custom-bg .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu.custom-bg .dropdown-item:hover {
+    background-color: #023047;
+}
+
+.hero {
+    background: url(../img/webp.webp) center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+
+
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+
+
+
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+    background: white;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+    background: #f9f9f9;
+}
+
+.section img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    width: 45%;
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column !important;
+        padding: 40px 5%;
+    }
+
+    .section img,
+    .text-content {
+        width: 100%;
+    }
+}
+
+.section img {
+    transition: transform 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+.section img:hover {
+    transform: scale(1.1);
+
+}
+
+
+.logo-animato {
+    animation: rotazione-movimento 3s forwards;
+
+
+}
+
+
+@keyframes rotazione-movimento {
+    0% {
+        transform: rotate(0deg) translateX(0);
+
+    }
+
+    50% {
+        transform: rotate(180deg) translateX(50px);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(0);
+
+    }
+}
+
+footer {
+    background: linear-gradient(to top, #023047, #ffffff);
+}
+
+.card {
+    background-image: url(../img/Air-travel-bubble.jpg);
+}
+
+.card-selezionata {
+    transform: scale(1.05);
+    border: 2px solid #f77f00;
+
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.sfondo {
+    background-image: url("../img/flying-airplane-with-dash-path-line-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titolo-chic {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.titolo-chic::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60%;
+    height: 3px;
+    background: goldenrod;
+    border-radius: 2px;
+}
+
+.shadow-text{
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+}
+
